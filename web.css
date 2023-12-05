@@ -36,14 +36,9 @@ nav a {
 }
 
 .row {
-    padding: 1rem 3rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.flex-item {
-    flex-basis: calc(33.33% - 2rem); /* Adjust based on your padding */
-    box-sizing: border-box; /* Include padding in the width calculation */
+    padding: 2rem 3rem;
+    display: flex; /* Necessary for child elements to behave in a row */
+    justify-content: space-between; /* Evenly spaces out row elements. Only works when width: 100% and now height: 100% for some reason */
 }
 
 .portfolio {
@@ -53,9 +48,11 @@ nav a {
 }
 
 .box {
-    border-radius: 10px;
-    height: 5px;
+    height: 25vw;
+    width: 25vw;
+    overflow: hidden; /* Ensures that is a portrait style picture is longer than the box that the overflow is hidden */
 }
-image {
-    object-fit: cover;
+img {
+    width: 100%;
+    object-fit: contain;
 }
