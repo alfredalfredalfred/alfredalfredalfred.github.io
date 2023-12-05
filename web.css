@@ -32,11 +32,30 @@ nav a {
 .hero {
     color: #000;
     font-size: 1.5rem;
-    padding: 1rem 1rem;
+    padding: 1rem 2rem;
 }
 
-.blog {
+.row {
+    padding: 1rem 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.flex-item {
+    flex-basis: calc(33.33% - 2rem); /* Adjust based on your padding */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.portfolio {
     color: #000;
     font-size: 1.5rem;
-    padding: 1rem 1rem;
+    padding: 3rem 2rem;
+}
+
+.box {
+    border-radius: 10px;
+    height: 5px;
+}
+image {
+    object-fit: cover;
 }
