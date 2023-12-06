@@ -48,25 +48,40 @@ nav a {
     justify-content: space-between; /* Evenly spaces out row elements. Only works when width: 100% and now height: 100% for some reason */
 }
 
-.portfolio {
+.module {
     color: #000;
     font-size: 1.5rem;
-    padding: 3rem 2rem;
+    padding: 6rem 2rem;
 }
 
 .box {
     height: 25vw;
     width: 25vw;
-    font-size: .5rem;
+    font-size: 1rem;
     overflow: hidden; /* Ensures that is a portrait style picture is longer than the box that the overflow is hidden */
+    text-align: justify;
 }
 img {
     width: 100%;
     object-fit: contain;
+    opacity: 75%;
+    transition: .25s;
+}
+img:hover {
+    opacity: 100%;
 }
 
 .caption {
+    width: 25vw;
     color: #000;
-    font-size: 1rem;
-    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    padding: 0rem 0rem;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+a:hover {
+    font-weight: bold;
 }
