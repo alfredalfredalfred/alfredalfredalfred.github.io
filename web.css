@@ -1,0 +1,72 @@
+* {
+    font-family: 'Optima', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 80px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    padding: 0 1.5rem;
+    font-size: 1.5rem;
+
+}
+
+.logo {
+    color: #000;
+    font-size: 1.5rem;
+    padding: 0 2rem; 
+}
+
+.hero {
+    color: #000;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+}
+
+.row {
+    padding: 1rem 3rem;
+    display: flex; /* Necessary for child elements to behave in a row */
+    justify-content: space-between; /* Evenly spaces out row elements. Only works when width: 100% and now height: 100% for some reason */
+}
+
+/* I want my captions for my blog and portfolio to align to the left edge of the photo and not evenly divided over the page */
+.caption-row {
+    padding: 1rem 3rem;
+    display: flex; /* Necessary for child elements to behave in a row */
+    justify-content: space-between; /* Evenly spaces out row elements. Only works when width: 100% and now height: 100% for some reason */
+}
+
+.portfolio {
+    color: #000;
+    font-size: 1.5rem;
+    padding: 3rem 2rem;
+}
+
+.box {
+    height: 25vw;
+    width: 25vw;
+    font-size: .5rem;
+    overflow: hidden; /* Ensures that is a portrait style picture is longer than the box that the overflow is hidden */
+}
+img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.caption {
+    color: #000;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+}
