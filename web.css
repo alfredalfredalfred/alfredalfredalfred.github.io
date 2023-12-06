@@ -36,7 +36,14 @@ nav a {
 }
 
 .row {
-    padding: 2rem 3rem;
+    padding: 1rem 3rem;
+    display: flex; /* Necessary for child elements to behave in a row */
+    justify-content: space-between; /* Evenly spaces out row elements. Only works when width: 100% and now height: 100% for some reason */
+}
+
+/* I want my captions for my blog and portfolio to align to the left edge of the photo and not evenly divided over the page */
+.caption-row {
+    padding: 1rem 3rem;
     display: flex; /* Necessary for child elements to behave in a row */
     justify-content: space-between; /* Evenly spaces out row elements. Only works when width: 100% and now height: 100% for some reason */
 }
@@ -50,9 +57,16 @@ nav a {
 .box {
     height: 25vw;
     width: 25vw;
+    font-size: .5rem;
     overflow: hidden; /* Ensures that is a portrait style picture is longer than the box that the overflow is hidden */
 }
 img {
     width: 100%;
     object-fit: contain;
+}
+
+.caption {
+    color: #000;
+    font-size: 1rem;
+    padding: 1rem 2rem;
 }
