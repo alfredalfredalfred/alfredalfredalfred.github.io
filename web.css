@@ -1,5 +1,5 @@
 * {
-    font-family: 'Optima', serif;
+    font-family: 'Optima', 'Marcellus', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -31,7 +31,7 @@ nav a {
 .logo {
     color: #000;
     font-size: 1.5rem;
-    padding-left: 4rem;
+    padding-left: 5%;
 }
 
 .hero {
@@ -68,7 +68,12 @@ nav a {
 }
 img {
     width: 100%;
-    object-fit: contain;
+
+    /* Having object-fit: cover; and width AND height both set to 100% makes it so the image is cropped and center vertically and horizontally.*/
+    
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
     opacity: 50%;
     transition: .25s;
 }
