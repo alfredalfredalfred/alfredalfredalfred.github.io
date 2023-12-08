@@ -95,3 +95,8 @@ a {
 a:hover {
     font-weight: bold;
 }
+
+.margin-bottom {
+    margin-bottom: 2.5%; /* Adjust the value as needed */
+}
+  
