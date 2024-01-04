@@ -81,6 +81,18 @@ img:hover {
     opacity: 100%;
 }
 
+/* you NEED to have the "img" after the class name in order to use this to override prior opacity behavior */
+.img-no-hover img {
+    width: 100%;
+
+    /* Having object-fit: cover; and width AND height both set to 100% makes it so the image is cropped and center vertically and horizontally.*/
+    
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 100%;
+}
+
 .caption {
     width: 25vw;
     color: #000;
@@ -96,7 +108,17 @@ a:hover {
     font-weight: bold;
 }
 
+
+
 .margin-bottom {
     margin-bottom: 2.5%; /* Adjust the value as needed */
+}
+
+.mb-1pct {
+    margin-bottom: 1%; /* Adjust the value as needed */
+}
+
+.mb-5pct {
+    margin-bottom: 5%; /* Adjust the value as needed */
 }
   
