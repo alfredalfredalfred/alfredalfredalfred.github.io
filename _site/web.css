@@ -1,0 +1,124 @@
+* {
+    font-family: 'Optima', 'Marcellus', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 80px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 0rem;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+
+    /* Be careful - the right padding on the rightmost element in the nav is what 
+    keeps it in line with the hero. This is why logo has an additional left-padding.
+    The reason it is like this is so that the nav elements are not too spaced out. */
+
+    padding: 0rem 4rem 0rem 0rem; /* top, right, bottom, left*/
+    font-size: 1.5rem;
+
+}
+
+.logo {
+    color: #000;
+    font-size: 1.5rem;
+    padding-left: 4rem;
+}
+
+.hero {
+    color: #000;
+    font-size: 1.5rem;
+    padding: 1rem 4rem;
+}
+
+.row {
+    padding: 1rem 3rem;
+    display: flex; /* Necessary for child elements to behave in a row */
+    justify-content: space-between; /* Evenly spaces out row elements. Only works when width: 100% and now height: 100% for some reason */
+}
+
+/* I want my captions for my blog and portfolio to align to the left edge of the photo and not evenly divided over the page */
+.caption-row {
+    padding: 1rem 3rem;
+    display: flex; /* Necessary for child elements to behave in a row */
+    justify-content: space-between; /* Evenly spaces out row elements. Only works when width: 100% and now height: 100% for some reason */
+}
+
+.module {
+    color: #000;
+    font-size: 1.5rem;
+    padding: 2rem 4rem;
+}
+
+.box {
+    height: 25vw;
+    width: 25vw;
+    font-size: 1rem;
+    overflow: hidden; /* Ensures that is a portrait style picture is longer than the box that the overflow is hidden */
+    text-align: justify;
+}
+img {
+    width: 100%;
+
+    /* Having object-fit: cover; and width AND height both set to 100% makes it so the image is cropped and center vertically and horizontally.*/
+    
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 50%;
+    transition: .25s;
+}
+img:hover {
+    opacity: 100%;
+}
+
+/* you NEED to have the "img" after the class name in order to use this to override prior opacity behavior */
+.img-no-hover img {
+    width: 100%;
+
+    /* Having object-fit: cover; and width AND height both set to 100% makes it so the image is cropped and center vertically and horizontally.*/
+    
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 100%;
+}
+
+.caption {
+    width: 25vw;
+    color: #000;
+    font-size: 1.25rem;
+    padding: 0rem 0rem;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+a:hover {
+    font-weight: bold;
+}
+
+
+
+.margin-bottom {
+    margin-bottom: 2.5%; /* Adjust the value as needed */
+}
+
+.mb-1pct {
+    margin-bottom: 1%; /* Adjust the value as needed */
+}
+
+.mb-5pct {
+    margin-bottom: 5%; /* Adjust the value as needed */
+}
+  
