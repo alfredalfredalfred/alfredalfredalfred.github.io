@@ -11,7 +11,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0rem 0rem;
+    padding: 2rem 2rem 0rem 0rem; /* top, right, bottom, left*/
 
 }
 
@@ -31,24 +31,24 @@ nav a {
 .logo {
     color: #000;
     font-size: 1.5rem;
-    padding-left: 4rem;
+    padding-left: 6rem; /* L+R padding is 6rem to match module size*/
 }
 
 .hero {
     color: #000;
     font-size: 1.5rem;
-    padding: 1rem 4rem;
+    padding: 2rem 6rem; /* L+R padding is 6rem to match module size*/
 }
 
 .row {
-    padding: 1rem 3rem;
+    padding: 1rem 0rem;
     display: flex; /* Necessary for child elements to behave in a row */
     justify-content: space-between; /* Evenly spaces out row elements. Only works when width: 100% and now height: 100% for some reason */
 }
 
 /* I want my captions for my blog and portfolio to align to the left edge of the photo and not evenly divided over the page */
 .caption-row {
-    padding: 1rem 3rem;
+    padding: 1rem 0rem;
     display: flex; /* Necessary for child elements to behave in a row */
     justify-content: space-between; /* Evenly spaces out row elements. Only works when width: 100% and now height: 100% for some reason */
 }
@@ -56,14 +56,14 @@ nav a {
 .module {
     color: #000;
     font-size: 1.5rem;
-    padding: 2rem 4rem;
+    padding: 2rem 6rem;
 }
 
 .box {
     height: 25vw;
     width: 25vw;
     font-size: 1rem;
-    overflow: hidden; /* Ensures that is a portrait style picture is longer than the box that the overflow is hidden */
+    overflow: hidden; /* Ensures that if a portrait style picture is longer than the box (on y-axis) that the overflow is hidden */
     text-align: justify;
 }
 img {
