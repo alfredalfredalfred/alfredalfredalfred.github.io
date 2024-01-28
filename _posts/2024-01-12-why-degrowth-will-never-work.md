@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Why Degrowth Will Never Work"
 date:   2024-01-12 16:44:27 +0100
 categories: jekyll update
