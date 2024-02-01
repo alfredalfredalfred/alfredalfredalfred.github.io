@@ -3,7 +3,7 @@
 <br><br>
 
 <div class = "gallery">
-    {% for post in reversed_collection %}
+    {% for post in include.collection %}
         <div class = "post-component">
             <div class = "box">
                 <a href="{{ post.url }}"><img src = "{{ post.image | relative_url }}"></a>
