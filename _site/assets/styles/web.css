@@ -101,6 +101,7 @@ a {
 }
 a:hover {
     font-weight: bold;
+    color: rgba(192, 228, 255, 1);
 }
 
 /* Margin classes */
