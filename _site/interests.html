@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Necessary for Jekyll to find web.css -->
+    <link rel="stylesheet" href= "/assets/styles/web.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Marcellus&display=swap" rel="stylesheet">
+    <title> Alfred Zhao </title>
+</head>
+<link rel = "icon" type = "image/png" href = assets/images/onigiri-favicon-192x192.png>
+<body>
+
+    <div class = "module">
+        <!--This href can't just be "index.html because when you go to a post and 
+        then go back Jekyll tries to go from the path of the post to "index.html"
+        not from root to "index.html". To get Jekyll to treat it as baseurl I 
+        have to prepend it with this filter. -->
+
+        <a href = "/index.html"> Alfred Zhao </a>
+        <div class = "float-right"> 
+            <a href = "/assets/pdfs/Alfred-Zhao-Resume.pdf"> Resume &nbsp; </a>   
+            <a href = "/about.html"> About </a>   
+        </div>
+
+    </div>
+       
+    <div class = module>
+        <a href = "/interests.html"> My Interests </a>
+
+<!-- While pretty much all of the below code looks redundant and reducible unfortunately the way I have done it 
+it is not because I have to iterate through the image row and then do the caption row after, keeping the "row" div 
+outside of the for loop. -->
+
+<a href = "">  </a>
+
+<br><br>
+
+<div class = "gallery">
+    
+        <div class = "post-component">
+            <div class = "box">
+                <a href="/interests/2024-01-01-interests-placeholder-1.html"><img src = "/assets/images/placeholder-image.png"></a>
+            </div>
+            <div class = "caption"> 
+                <a href="/interests/2024-01-01-interests-placeholder-1.html"> Loading... </a>
+                <br>
+                <small> Jan 1, 2024 </small>
+            </div>
+        </div>
+    
+        <div class = "post-component">
+            <div class = "box">
+                <a href="/interests/2024-01-01-interests-placeholder-2.html"><img src = "/assets/images/placeholder-image.png"></a>
+            </div>
+            <div class = "caption"> 
+                <a href="/interests/2024-01-01-interests-placeholder-2.html"> Loading... </a>
+                <br>
+                <small> Jan 1, 2024 </small>
+            </div>
+        </div>
+    
+        <div class = "post-component">
+            <div class = "box">
+                <a href="/interests/2024-01-01-interests-placeholder-3.html"><img src = "/assets/images/placeholder-image.png"></a>
+            </div>
+            <div class = "caption"> 
+                <a href="/interests/2024-01-01-interests-placeholder-3.html"> Loading... </a>
+                <br>
+                <small> Jan 1, 2024 </small>
+            </div>
+        </div>
+    
+    </div>
+    </div>
+    
+</body>
+</html>

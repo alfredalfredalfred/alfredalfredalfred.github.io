@@ -1,0 +1,123 @@
+* {
+    font-family: 'Montserrat', 'Varela', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Varela';
+    src: url('/assets/fonts/varela-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+    font-family: 'Montserrat';
+    src: url('/assets/fonts/montserrat/Montserrat-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.module {
+    color: #000;
+    font-size: 1.5rem;
+    padding: 2.5% 5% 0% 5%;
+}
+
+.float-right {
+    float: right;
+    margin-left: 2.5%;
+}
+
+.post {
+    color: #000;
+}
+
+.caption {
+    width: 25vw;
+    color: #000;
+    font-size: 1.25rem;
+    padding: 0rem 0rem;
+}
+
+/* From ".gallery" to ___ is where I have the "flex-box" way of organizing modules into a gallery */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* This allows items to wrap onto the next line */
+    justify-content: space-between; /* Spreads items evenly */
+    padding: 1rem 0;
+}
+
+.post-component {
+    height: 30vw;
+    width: 25vw;
+    font-size: 1.25rem;
+    margin: 0rem 0rem 2rem 0rem;
+}
+
+.box {
+    height: 25vw;
+    width: 25vw;
+    overflow: hidden; /* Ensures that if a portrait style picture is longer than the box (on y-axis) that the overflow is hidden */
+    text-align: justify;
+}
+img {
+    width: 100%;
+
+    /* Having object-fit: cover; and width AND height both set to 100% makes it so the image is cropped and center vertically and horizontally.*/
+    
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 50%;
+    transition: .25s;
+}
+img:hover {
+    opacity: 100%;
+}
+
+/* you NEED to have the "img" after the class name in order to use this to override prior opacity behavior */
+.img-no-hover img {
+    width: 100%;
+
+    /* Having object-fit: cover; and width AND height both set to 100% makes it so the image is cropped and center vertically and horizontally.*/
+    
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 100%;
+}
+
+.caption {
+    width: 25vw;
+    color: #000;
+    font-size: 1.25rem;
+    padding: 5% 0% 0% 0%;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+a:hover {
+    font-weight: bold;
+}
+
+/* Margin classes */
+
+.margin-bottom {
+    margin-bottom: 2.5%; /* Adjust the value as needed */
+}
+
+.mb-1pct {
+    margin-bottom: 1%; /* Adjust the value as needed */
+}
+
+.mb-5pct {
+    margin-bottom: 5%; /* Adjust the value as needed */
+}
+
+.mt-5pct {
+    margin-top: 5%; /* Adjust the value as needed */
+}
+  

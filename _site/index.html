@@ -3,159 +3,191 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href = "/assets/styles/web.css">
+
+    <!-- Necessary for Jekyll to find web.css -->
+    <link rel="stylesheet" href= "/assets/styles/web.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Marcellus&display=swap" rel="stylesheet">
-    <title>Alfred Zhao</title>
+    <title> Alfred Zhao </title>
 </head>
-<link rel = "icon" type = "image/png" href = /assets/images/onigiri-favicon-192x192.png>
+<link rel = "icon" type = "image/png" href = assets/images/onigiri-favicon-192x192.png>
 <body>
-    <nav>
-        <div class = "logo">
-            <a href = "index.html"> Alfred Zhao</a>
+
+    <div class = "module">
+        <!--This href can't just be "index.html because when you go to a post and 
+        then go back Jekyll tries to go from the path of the post to "index.html"
+        not from root to "index.html". To get Jekyll to treat it as baseurl I 
+        have to prepend it with this filter. -->
+
+        <a href = "/index.html"> Alfred Zhao </a>
+        <div class = "float-right"> 
+            <a href = "/assets/pdfs/Alfred-Zhao-Resume.pdf"> Resume &nbsp; </a>   
+            <a href = "/about.html"> About </a>   
         </div>
-        <div class = "nav-items">
-            <a href = "portfolio.html"> Portfolio </a>
-            <a href = "writing.html"> Writing </a>
-            <a href = "my-interests.html"> Interests </a>
-            <a href = "about.html"> About </a>
-        </div>
-    </nav>
 
-    <section class = "module">
-        <div class = "module-container">
-            <a href = "portfolio.html"> Things I've Made</a>
-            <p>
-                <br>
-            </p>
+    </div>
+       
+    <div class = module>
+        <!-- While pretty much all of the below code looks redundant and reducible unfortunately the way I have done it 
+it is not because I have to iterate through the image row and then do the caption row after, keeping the "row" div 
+outside of the for loop. -->
+<a href = "/portfolio.html"> Things I've Made </a>
 
-            <div class = "row">
-                <div class = "box">
-                    <a href = "" target = "_blank" ><img src="assets/images/google-calendar-app-homepage-mockup.png"></a>
-                </div>
-                <div class = "box">
-                    <a href = "" target = "_blank" ><img src="assets/images/placeholder-image.png"></a>
-                </div> 
-                <div class = "box">
-                    <a href = "" target = "_blank" ><img src="assets/images/placeholder-image.png"></a>
-                </div>
-            </div>
+<br><br>
 
-            <div class = "caption-row">
-                <div class = "caption">
-                    <a href = "" target = "_blank" >Google Calendar Sync</a>
-                    <br>
-                    <small>
-                        December 6, 2023
-                    </small>
-                </div>
-                <div class = "caption">
-                    <a href = "" target = "_blank" >Loading...</a>
-                    <br>
-                    <small>
-                        December 6, 2023
-                    </small>
-                </div> 
-                <div class = "caption">
-                    <a href = "" target = "_blank" >Loading...</a>
-                    <br>
-                    <small>
-                        December 6, 2023
-                    </small>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class = "gallery">
+    
+            
+                    <div class = "post-component">
+                        <div class = "box">
+                            <a href="/projects/2024-01-01-projects-placeholder-1.html"><img src = "/assets/images/placeholder-image.png"></a>
+                        </div>
+                        <div class = "caption"> 
+                            <a href="/projects/2024-01-01-projects-placeholder-1.html"> Loading... </a>
+                            <br>
+                            <small> Jan 1, 2024 </small>
+                        </div>
+                    </div>
+            
+    
+            
+                    <div class = "post-component">
+                        <div class = "box">
+                            <a href="/projects/2024-01-01-projects-placeholder-2.html"><img src = "/assets/images/placeholder-image.png"></a>
+                        </div>
+                        <div class = "caption"> 
+                            <a href="/projects/2024-01-01-projects-placeholder-2.html"> Loading... </a>
+                            <br>
+                            <small> Jan 1, 2024 </small>
+                        </div>
+                    </div>
+            
+    
+            
+                    <div class = "post-component">
+                        <div class = "box">
+                            <a href="/projects/2024-01-01-projects-placeholder-3.html"><img src = "/assets/images/placeholder-image.png"></a>
+                        </div>
+                        <div class = "caption"> 
+                            <a href="/projects/2024-01-01-projects-placeholder-3.html"> Loading... </a>
+                            <br>
+                            <small> Jan 1, 2024 </small>
+                        </div>
+                    </div>
+            
+    
+            
+    
+</div>
 
-    <section class = "module">
-        <div class = "module-container">
-            <a href = "writing.html" >My Writing</a>
-            <p>
-                <br>
-            </p>
+<br> 
 
-            <div class = "row">
-                <div class = "box">
-                    <a href = "blog-post.html" target = "_blank" ><img src="assets/images/appalachia-trees-deforestation-diaz.jpg"></a>
-                </div>
-                <div class = "box">
-                    <a href = "_site/jekyll/update/2024/01/12/why-degrowth-will-never-work.html" target = "_blank" ><img src="assets/images/appalachia-trees-deforestation-diaz.jpg"></a>
-                </div> 
-                <div class = "box">
-                    <a href = "_site/jekyll/update/2023/12/09/welcome-to-jekyll.html" target = "_blank" ><img src="assets/images/placeholder-image.png"></a>
-                </div>
-            </div>
+<a href = "/writing.html"> My Writing </a>
 
-            <div class = "caption-row">
-                <div class = "caption">
-                    <a href = "" target = "_blank" >Why "Degrowth" Will Never Work</a>
-                    <br>
-                    <small>
-                        Jan 5, 2024
-                    </small>
-                </div>
-                <div class = "caption">
-                    <a href = "_site/jekyll/update/2024/01/12/why-degrowth-will-never-work.html" target = "_blank" >Degrowth (Jekyll href)</a>
-                    <br>
-                    <small>
-                        May 27, 2019
-                    </small>
-                </div> 
-                <div class = "caption">
-                    <a href = "_site/jekyll/update/2023/12/09/welcome-to-jekyll.html" target = "_blank" >Welcome to Jekyll (Jekyll href)</a>
-                    <br>
-                    <small>
-                        Dec 6, 2023
-                    </small>
-                </div>
-            </div>
-        </div>
-    </section>
+<br><br>
 
-    <section class = "module">
-        <div class = "module-container">
-            <a href = "my-interests.html" >Some Cool Stuff</a>
-            <p>
-                <br>
-            </p>
+<div class = "gallery">
+    
+            
+                    <div class = "post-component">
+                        <div class = "box">
+                            <a href="/2024/01/12/why-degrowth-will-never-work.html"><img src = "/assets/images/appalachia-trees-deforestation-diaz.jpg"></a>
+                        </div>
+                        <div class = "caption"> 
+                            <a href="/2024/01/12/why-degrowth-will-never-work.html"> Why "Degrowth" Will Never Work </a>
+                            <br>
+                            <small> Jan 12, 2024 </small>
+                        </div>
+                    </div>
+            
+    
+            
+                    <div class = "post-component">
+                        <div class = "box">
+                            <a href="/2024/01/01/writing-placeholder-3.html"><img src = "/assets/images/placeholder-image.png"></a>
+                        </div>
+                        <div class = "caption"> 
+                            <a href="/2024/01/01/writing-placeholder-3.html"> Loading... </a>
+                            <br>
+                            <small> Jan 1, 2024 </small>
+                        </div>
+                    </div>
+            
+    
+            
+                    <div class = "post-component">
+                        <div class = "box">
+                            <a href="/2024/01/01/writing-placeholder-2.html"><img src = "/assets/images/placeholder-image.png"></a>
+                        </div>
+                        <div class = "caption"> 
+                            <a href="/2024/01/01/writing-placeholder-2.html"> Loading... </a>
+                            <br>
+                            <small> Jan 1, 2024 </small>
+                        </div>
+                    </div>
+            
+    
+            
+    
+    </div>
+    
+    <br> 
 
-            <div class = "row">
-                <div class = "box">
-                    <a href = "https://www.youtube.com/watch?v=CWnqX41JHuM" target = "_blank" ><img src="assets/images/puparia-character-sketch-tamagawa.png"></a>
-                </div>
-                <div class = "box">
-                    <a href = "https://jeff.kim/seba-jun/" target = "_blank" ><img src="assets/images/samurai-champloo-blue-sky.jpg"></a>
-                </div> 
-                <div class = "box">
-                    <a href = "https://disasterpeace.bandcamp.com/album/hyper-light-drifter" target = "_blank" ><img src="assets/images/hyper-light-drifter-disasterpiece.jpeg"></a>
-                </div>
-            </div>
+<a href = "/interests.html"> My Interests </a>
 
-            <div class = "caption-row">
-                <div class = "caption">
-                    <a href = "https://www.youtube.com/watch?v=CWnqX41JHuM" target = "_blank" >Puparia</a>
-                    <br>
-                    <small>
-                        November 20, 2020
-                    </small>
-                </div>
-                <div class = "caption">
-                    <a href = "https://jeff.kim/seba-jun/" target = "_blank" >The Legacy of Nujabes - Jeff Kim</a>
-                    <br>
-                    <small>
-                        May 27, 2019
-                    </small>
-                </div> 
-                <div class = "caption">
-                    <a href = "https://disasterpeace.bandcamp.com/album/hyper-light-drifter" target = "_blank" >Hyper Light Drifter Soundtrack</a>
-                    <br>
-                    <small>
-                        March 31, 2016
-                    </small>
-                </div>
-            </div>
-        </div>
-    </section>
+<br><br>
+
+<div class = "gallery">
+    
+            
+                    <div class = "post-component">
+                        <div class = "box">
+                            <a href="/interests/2024-01-01-interests-placeholder-1.html"><img src = "/assets/images/placeholder-image.png"></a>
+                        </div>
+                        <div class = "caption"> 
+                            <a href="/interests/2024-01-01-interests-placeholder-1.html"> Loading... </a>
+                            <br>
+                            <small> Jan 1, 2024 </small>
+                        </div>
+                    </div>
+            
+    
+            
+                    <div class = "post-component">
+                        <div class = "box">
+                            <a href="/interests/2024-01-01-interests-placeholder-2.html"><img src = "/assets/images/placeholder-image.png"></a>
+                        </div>
+                        <div class = "caption"> 
+                            <a href="/interests/2024-01-01-interests-placeholder-2.html"> Loading... </a>
+                            <br>
+                            <small> Jan 1, 2024 </small>
+                        </div>
+                    </div>
+            
+    
+            
+                    <div class = "post-component">
+                        <div class = "box">
+                            <a href="/interests/2024-01-01-interests-placeholder-3.html"><img src = "/assets/images/placeholder-image.png"></a>
+                        </div>
+                        <div class = "caption"> 
+                            <a href="/interests/2024-01-01-interests-placeholder-3.html"> Loading... </a>
+                            <br>
+                            <small> Jan 1, 2024 </small>
+                        </div>
+                    </div>
+            
+    
+    </div>
+    
+    <br> 
+
+<br> 
+
+
+    </div>
+    
 </body>
 </html>
