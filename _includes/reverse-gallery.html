@@ -1,9 +1,12 @@
+<!-- Motivation: Posts, for some reason, posts oldest to newest but other collections are the opposite so I just have to reverse to standardize -->
+
 <a href = "{{ include.href | relative.url}}"> {{ include.name }} </a>
 
 <br><br>
 
 <div class = "gallery">
-    {% for post in reversed_collection %}
+    {% assign reversed_collection = include.collection | reverse %}
+    {% for post in reversed_collection | reverse %}
         <div class = "post-component">
             <div class = "box">
                 <a href="{{ post.url }}"><img src = "{{ post.image | relative_url }}"></a>
