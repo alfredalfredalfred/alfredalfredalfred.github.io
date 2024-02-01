@@ -4,32 +4,8 @@ layout: default
 <!-- While pretty much all of the below code looks redundant and reducible unfortunately the way I have done it 
 it is not because I have to iterate through the image row and then do the caption row after, keeping the "row" div 
 outside of the for loop. -->
-<a href = "{{ site.baseurl }}/portfolio.html"> Things I've Made </a>
 
-<br><br>
-
-<div class = "gallery">
-    <!-- Motivation: Posts, for some reason, posts oldest to newest but other collections are the opposite so I just have to reverse to standardize -->
-    {% assign reversed_projects = site.projects | reverse %}
-    {% for post in reversed_projects %}
-            {% if forloop.index <= 3 %}
-                    <div class = "post-component">
-                        <div class = "box">
-                            <a href="{{ post.url | relative_url }}"><img src = "{{ post.image | relative_url }}"></a>
-                        </div>
-                        <div class = "caption"> 
-                            <a href="{{ post.url | relative_url }}"> {{ post.title }} </a>
-                            <br>
-                            <small> {{ post.date | date: "%b %-d, %Y" }} </small>
-                        </div>
-                    </div>
-            {% endif %}
-    {% endfor %}
-</div>
-
-<br> 
-
-<a href = "{{ site.baseurl }}/writing.html"> My Writing </a>
+<a href = "{{ site.baseurl }}/writing.html"> Work </a>
 
 <br><br>
 
@@ -52,7 +28,7 @@ outside of the for loop. -->
     
     <br> 
 
-<a href = "{{ site.baseurl }}/interests.html"> My Interests </a>
+<a href = "{{ site.baseurl }}/interests.html"> Interests </a>
 
 <br><br>
 
