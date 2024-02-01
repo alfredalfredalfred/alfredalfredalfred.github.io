@@ -55,14 +55,19 @@ outside of the for loop. -->
 <br><br>
 
 <div class = "gallery">
-    {% for post in site.interests %}
+    
+    {% assign reversed_interests = site.interests | reverse %}
+    {% for post in reversed_interests %}
             {% if forloop.index <= 3 %}
                     <div class = "post-component">
+                        <!--"post.href" accesses the url specified in the front matter of the post being rendered with 
+                            the "href" variable. This allows me to use the blog post format to directly href to external
+                            links, automating the process of putting in hrefs onto an html page conventionally. -->
                         <div class = "box">
-                            <a href="{{ post.url | relative_url }}"><img src = "{{ post.image | relative_url }}"></a>
+                            <a href="{{ post.href | relative_url }}"><img src = "{{ post.image | relative_url }}"></a>
                         </div>
                         <div class = "caption"> 
-                            <a href="{{ post.url | relative_url }}"> {{ post.title }} </a>
+                            <a href="{{ post.href | relative_url }}"> {{ post.title }} </a>
                             <br>
                             <small> {{ post.date | date: "%b %-d, %Y" }} </small>
                         </div>

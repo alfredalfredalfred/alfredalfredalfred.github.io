@@ -1,22 +1,18 @@
-<!-- While pretty much all of the below code looks redundant and reducible unfortunately the way I have done it 
-it is not because I have to iterate through the image row and then do the caption row after, keeping the "row" div 
-outside of the for loop. -->
-
 <a href = "{{ include.href | relative.url}}"> {{ include.name }} </a>
 
 <br><br>
 
 <div class = "gallery">
-    {% for post in include.collection %}
+    {% for post in include.collection | reverse %}
         <div class = "post-component">
             <div class = "box">
-                <a href="{{ post.url | relative_url }}"><img src = "{{ post.image | relative_url }}"></a>
+                <a href="{{ post.url }}"><img src = "{{ post.image | relative_url }}"></a>
             </div>
             <div class = "caption"> 
-                <a href="{{ post.url | relative_url }}"> {{ post.title }} </a>
+                <a href="{{ post.url }}"> {{ post.title }} </a>
                 <br>
                 <small> {{ post.date | date: "%b %-d, %Y" }} </small>
             </div>
         </div>
     {% endfor %}
-    </div>
+</div>
