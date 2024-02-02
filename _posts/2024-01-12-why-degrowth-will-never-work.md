@@ -20,15 +20,19 @@ In summary, degrowth faces a massive branding issue. It is associated with scali
 
 <br>
 
-Regrowth. Regrowth is a reframing; rather than scaling down, economies should “scale within”. Rather than straining public coffers via thoughtless infrastructure, we build assets that are dialed in and effective, that amortize gracefully on the balance sheet. Rather than always building new, we create repairable, backwards compatible systems. Rather than building energy infrastructure that has high levels of exposure to commodity prices, we create a resilient, diversified portfolio of options that will function regardless of supply fluctuations and geopolitical tension. 
+A neutral term that is similar to degrowth but does not suffer from negative semantics would be a better alternative. Regrowth, for example is an easy choice.
 
 <br>
 
-While these thoughts are public sector thoughts, these ideas can be applied to all scalable economic systems. They illustrate the core principle of regrowth; strengthening the underlying assets that make up our economic structures: people, infrastructure, institutions, communities, and ultimately, the biosphere.
+Regrowth, then, could be a reframing; rather than scaling down, economies should “scale within”. Rather than straining public coffers via thoughtless infrastructure, we build assets that are dialed in and effective, that amortize gracefully on the balance sheet. Rather than always building new, we create repairable, backwards compatible systems. Rather than building energy infrastructure that has high levels of exposure to commodity prices, we create a resilient, diversified portfolio of options that will function regardless of supply fluctuations and geopolitical tension. 
 
 <br>
 
-This begs the question: why would this paradigm be more palatable for corporations and business/political leaders than degrowth? Simply put, regrowth provides incentives to all stakeholders, shareholders included. While degrowth argues for a vague deceleration of growth, regrowth argues for putting our foot firmly back on the gas pedal, albeit in a radically new manner. It opts for growth that is meaningful, robust, and resilient. 
+While these thoughts are public sector thoughts, these ideas can be applied to all scalable economic systems. They illustrate the core principle of regrowth; strengthening the underlying assets that make up our economic structures such as people, culuture, infrastructure, institutions, and even the biosphere will do unfathomably good for the future wealth of the human race.
+
+<br>
+
+This paradigm would be more palatable for business leaders and polticians because it     provides incentives to all stakeholders, shareholders included. While degrowth argues for a vague deceleration of growth, regrowth argues for putting our foot firmly back on the gas pedal, albeit in a radically new manner. It opts for growth that is meaningful, robust, and resilient. 
 
 <br>
 
