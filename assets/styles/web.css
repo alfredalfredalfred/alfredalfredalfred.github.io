@@ -1,7 +1,7 @@
+@import "code-highlights.css";
+
 * {
     font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -10,6 +10,13 @@
     src: url('/assets/fonts/montserrat/Montserrat-Light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/assets/fonts/montserrat/Montserrat-Medium.ttf') format('truetype');
+    font-weight: bold;
+    font-style: bold;
 }
 
 .module {
@@ -27,13 +34,6 @@
     color: #000;
 }
 
-.caption {
-    width: 25vw;
-    color: #000;
-    font-size: 1.25rem;
-    padding: 0rem 0rem;
-}
-
 /* From ".gallery" to ___ is where I have the "flex-box" way of organizing modules into a gallery */
 
 .gallery {
@@ -46,7 +46,6 @@
 .post-component {
     height: 30vw;
     width: 25vw;
-    font-size: 1.25rem;
     margin: 0rem 0rem 2rem 0rem;
 }
 
@@ -86,7 +85,7 @@ img:hover {
 .caption {
     width: 25vw;
     color: #000;
-    font-size: 1.25rem;
+    font-size: 1rem;
     padding: 5% 0% 0% 0%;
 }
 
@@ -101,7 +100,6 @@ a {
     color: #000;
 }
 a:hover {
-    font-weight: bold;
     color: rgba(192, 228, 255, 1);
 }
 

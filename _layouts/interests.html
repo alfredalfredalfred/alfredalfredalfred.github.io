@@ -7,7 +7,7 @@ layout: default
 
 <div class = "gallery">
     {% assign reversed_interests = site.interests | reverse %}
-    {% for post in reversed_interests | reverse %}
+    {% for post in reversed_interests %}
         <div class = "post-component">
             <!--"post.href" accesses the url specified in the front matter of the post being rendered with 
                 the "href" variable. This allows me to use the blog post format to directly href to external
