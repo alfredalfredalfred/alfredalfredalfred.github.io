@@ -2,7 +2,7 @@
 layout: post
 title:  "Why \"Degrowth\" Will Never Work"
 date:   2024-01-12 16:44:27 +0100
-image: /assets/images/appalachia-trees-deforestation-diaz.jpg
+image: /assets/images/appalachia-forest-blog-cover.png
 ---
 Degrowth is the policy by which economies and nations should “abandon growth of gross domestic product (GDP) as a goal, scale down destructive and unnecessary forms of production to reduce energy and material use, and focus economic activity around securing human needs and well-being” (Hickel, et. al). In theory, this is the only way forward for humanity’s survival and prosperity. In practice, this seems unlikely to ever happen.
 

@@ -55,7 +55,8 @@
     overflow: hidden; /* Ensures that if a portrait style picture is longer than the box (on y-axis) that the overflow is hidden */
     text-align: justify;
 }
-img {
+
+.box img {
     width: 100%;
 
     /* Having object-fit: cover; and width AND height both set to 100% makes it so the image is cropped and center vertically and horizontally.*/
@@ -66,7 +67,7 @@ img {
     opacity: 50%;
     transition: .25s;
 }
-img:hover {
+.box img:hover {
     opacity: 100%;
 }
 
@@ -89,10 +90,22 @@ img:hover {
     padding: 5% 0% 0% 0%;
 }
 
+.row {
+    display: flex;
+  }
+
 .blog-hero {
     color: #000;
     font-size: 1rem;
-    padding: 5% 15% 0% 15%; 
+    padding: 5% 15% 0% 15%;
+    line-height: 1.5; 
+}
+
+.blog-hero img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 a {

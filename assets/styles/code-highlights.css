@@ -1,8 +1,8 @@
   .highlight, code {
     background-color: #eeeeff; /* Use the variable for code background color */
-    margin: 5px 2px 5px 2px;
-    padding: 0px 5px 0px 5px;
-    border-radius: 5px; /* Optional: rounds the corners of the code block */
+    margin: 2px 2px 2px 2px;
+    padding: 0px 2px 0px 2px;
+    border-radius: 4px; /* Optional: rounds the corners of the code block */
     overflow: auto; /* Allows scrolling for overflow content */
     .c     { color: #998; font-style: italic } /* Comment */
     .err   { color: #a61717; background-color: #e3d2d2 } /* Error */
