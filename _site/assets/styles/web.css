@@ -170,14 +170,6 @@ a:hover {
     margin: 0 auto;
 }
 
-.horizontal-line {
-    border-top: 2px solid grey;
-    opacity: 25%;
-    height: 1px;
-    width: 100%;
-    margin: 0 auto;
-}
-
 /* Media query for mobile devices */
 @media (max-width: 600px) {
     .horizontal-line {
