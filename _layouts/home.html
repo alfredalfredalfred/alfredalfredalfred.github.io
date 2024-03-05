@@ -25,7 +25,6 @@ outside of the for loop. -->
 <a href = "{{ site.baseurl }}/interests.html"> Interests </a>
 
 <div class = "vertical-flexbox">
-    
     {% assign reversed_interests = site.interests | reverse %}
     {% for post in reversed_interests %}
             {% if forloop.index <= 3 %}
@@ -39,9 +38,4 @@ outside of the for loop. -->
                 </div>
             {% endif %}
     {% endfor %}
-    </div>
-    
-    <br> 
-
-<br> 
-
+</div>

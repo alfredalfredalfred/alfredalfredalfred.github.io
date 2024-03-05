@@ -22,7 +22,16 @@
 .module {
     color: #000;
     font-size: 1.5rem;
-    padding: 1% 20% 1% 20%;
+    padding: 1% 20% 1% 20%; /* Default styles assumed to be for larger screens */
+}
+
+  
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+    .module {
+      font-size: 1rem; /* Slightly smaller font size for mobile */
+      padding: 1% 0% 1% 0%; /* Reduced padding for mobile screens */
+    }
 }
 
 .float-right {
@@ -44,7 +53,7 @@
 }
 
 .vertical-flexbox {
-   display: flex;
+    display: flex;
     flex-direction: column;
     /* flex-wrap: wrap; This allows items to wrap onto the next line */
     /* justify-content: space-between; Spreads items evenly */
@@ -92,10 +101,17 @@
 }
 
 .caption {
-    width: 25vw;
     color: #000;
     font-size: 1rem;
     padding: 5% 0% 0% 0%;
+}
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+    .caption {
+        color: #000;
+        font-size: .75rem;
+        padding: 5% 0% 0% 0%;
+    }
 }
 
 .row {
@@ -152,4 +168,23 @@ a:hover {
     height: 1px;
     width: 60%;
     margin: 0 auto;
-  }
+}
+
+.horizontal-line {
+    border-top: 2px solid grey;
+    opacity: 25%;
+    height: 1px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+    .horizontal-line {
+        border-top: 2px solid grey;
+        opacity: 25%;
+        height: 1px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
