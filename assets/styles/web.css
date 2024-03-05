@@ -145,3 +145,11 @@ a:hover {
 .mt-5pct {
     margin-top: 5%; /* Adjust the value as needed */ 
 }
+
+.horizontal-line {
+    border-top: 2px solid grey;
+    opacity: 25%;
+    height: 1px;
+    width: 60%;
+    margin: 0 auto;
+  }

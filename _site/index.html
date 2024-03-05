@@ -15,8 +15,7 @@
 <link rel = "icon" type = "image/png" href = assets/images/onigiri-favicon-192x192.png>
 <body>
 
-    
-<div class = "mb-5pct">
+<div class = "mb-1pct">
     <div class = "module">
         <!--This href can't just be "index.html because when you go to a post and 
         then go back Jekyll tries to go from the path of the post to "index.html"
@@ -31,7 +30,9 @@
     </div>
 </div>
 
-       
+<div class = "horizontal-line"> </div>
+
+<div class = "mt-5pct">
     <div class = module>
         <!-- While pretty much all of the below code looks redundant and reducible unfortunately the way I have done it 
 it is not because I have to iterate through the image row and then do the caption row after, keeping the "row" div 
@@ -65,9 +66,10 @@ outside of the for loop. -->
                 </div>
             
     
-    </div>
+</div>
     
     <br> 
+    <br>
 
 <a href = "/interests.html"> Interests </a>
 
@@ -122,6 +124,18 @@ outside of the for loop. -->
 
 
     </div>
-    
+</div>
+
+<div class = "horizontal-line"> </div>
+
+<div class = "module">
+    <!--This href can't just be "index.html because when you go to a post and 
+    then go back Jekyll tries to go from the path of the post to "index.html"
+    not from root to "index.html". To get Jekyll to treat it as baseurl I 
+    have to prepend it with this filter. -->
+    <a href = "https://www.linkedin.com/in/alfred-zhao-/" target = "_blank"> LinkedIn &nbsp</a>   
+    <a href = "https://github.com/alfredalfredalfred" target = "_blank"> GitHub &nbsp</a>
+</div>
+
 </body>
 </html>
