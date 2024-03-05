@@ -22,7 +22,7 @@
 .module {
     color: #000;
     font-size: 1.5rem;
-    padding: 2.5% 5% 0% 5%;
+    padding: 2.5% 20% 0% 20%;
 }
 
 .float-right {
@@ -41,6 +41,14 @@
     flex-wrap: wrap; /* This allows items to wrap onto the next line */
     justify-content: space-between; /* Spreads items evenly */
     padding: 1rem 0;
+}
+
+.vertical-flexbox {
+   display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; This allows items to wrap onto the next line */
+    /* justify-content: space-between; Spreads items evenly */
+    padding: 0rem 0; 
 }
 
 .post-component {
@@ -97,7 +105,7 @@
 .blog-hero {
     color: #000;
     font-size: 1rem;
-    padding: 5% 15% 0% 15%;
+    padding: 5% 0% 0% 0%;
     line-height: 1.5; 
 }
 
@@ -134,3 +142,6 @@ a:hover {
     margin-bottom: 2.5%; /* Adjust the value as needed */
 }
   
+.mt-5pct {
+    margin-top: 5%; /* Adjust the value as needed */ 
+}

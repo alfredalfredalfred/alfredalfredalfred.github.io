@@ -7,21 +7,14 @@ outside of the for loop. -->
 
 <a href = "{{ site.baseurl }}/writing.html"> Work </a>
 
-<br><br>
-
-<div class = "gallery">
+<div class = "vertical-flexbox">
     {% for post in site.posts %}
             {% if forloop.index <= 3 %}
-                    <div class = "post-component">
-                        <div class = "box">
-                            <a href="{{ post.url | relative_url }}"><img src = "{{ post.image | relative_url }}"></a>
-                        </div>
-                        <div class = "caption"> 
-                            <a href="{{ post.url | relative_url }}"> {{ post.title }} </a>
-                            <br>
-                            <small> {{ post.date | date: "%b %-d, %Y" }} </small>
-                        </div>
-                    </div>
+                <div class = "caption"> 
+                    <a href="{{ post.url | relative_url }}"> {{ post.title }} </a>
+                    <br>
+                    <small> {{ post.date | date: "%b %-d, %Y" }} </small>
+                </div>
             {% endif %}
     {% endfor %}
     </div>
@@ -30,26 +23,19 @@ outside of the for loop. -->
 
 <a href = "{{ site.baseurl }}/interests.html"> Interests </a>
 
-<br><br>
-
-<div class = "gallery">
+<div class = "vertical-flexbox">
     
     {% assign reversed_interests = site.interests | reverse %}
     {% for post in reversed_interests %}
             {% if forloop.index <= 3 %}
-                    <div class = "post-component">
-                        <!--"post.href" accesses the url specified in the front matter of the post being rendered with 
-                            the "href" variable. This allows me to use the blog post format to directly href to external
-                            links, automating the process of putting in hrefs onto an html page conventionally. -->
-                        <div class = "box">
-                            <a href="{{ post.href | relative_url }}"><img src = "{{ post.image | relative_url }}"></a>
-                        </div>
-                        <div class = "caption"> 
-                            <a href="{{ post.href | relative_url }}"> {{ post.title }} </a>
-                            <br>
-                            <small> {{ post.date | date: "%b %-d, %Y" }} </small>
-                        </div>
-                    </div>
+                <!--"post.href" accesses the url specified in the front matter of the post being rendered with 
+                    the "href" variable. This allows me to use the blog post format to directly href to external
+                    links, automating the process of putting in hrefs onto an html page conventionally. -->
+                <div class = "caption"> 
+                    <a href="{{ post.href | relative_url }}"> {{ post.title }} </a>
+                    <br>
+                    <small> {{ post.date | date: "%b %-d, %Y" }} </small>
+                </div>
             {% endif %}
     {% endfor %}
     </div>

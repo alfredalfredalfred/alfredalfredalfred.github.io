@@ -15,6 +15,8 @@
 <link rel = "icon" type = "image/png" href = assets/images/onigiri-favicon-192x192.png>
 <body>
 
+    
+<div class = "mb-5pct">
     <div class = "module">
         <!--This href can't just be "index.html because when you go to a post and 
         then go back Jekyll tries to go from the path of the post to "index.html"
@@ -26,8 +28,9 @@
             <a href = "/assets/pdfs/Alfred-Zhao-Resume.pdf" target = "_blank"> Resume &nbsp; </a>   
             <a href = "/about.html"> About </a>   
         </div>
-
     </div>
+</div>
+
        
     <div class = module>
         <!-- While pretty much all of the below code looks redundant and reducible unfortunately the way I have done it 
@@ -36,47 +39,30 @@ outside of the for loop. -->
 
 <a href = "/writing.html"> Work </a>
 
-<br><br>
-
-<div class = "gallery">
+<div class = "vertical-flexbox">
     
             
-                    <div class = "post-component">
-                        <div class = "box">
-                            <a href="/2024/02/01/using-python-to-visualize-brain-injuries.html"><img src = "/assets/images/python-code-snippet-blog-cover.png"></a>
-                        </div>
-                        <div class = "caption"> 
-                            <a href="/2024/02/01/using-python-to-visualize-brain-injuries.html"> Using Python to Visualize CTE Risk </a>
-                            <br>
-                            <small> Feb 1, 2024 </small>
-                        </div>
-                    </div>
+                <div class = "caption"> 
+                    <a href="/2024/02/01/using-python-to-visualize-brain-injuries.html"> Using Python to Visualize CTE Risk </a>
+                    <br>
+                    <small> Feb 1, 2024 </small>
+                </div>
             
     
             
-                    <div class = "post-component">
-                        <div class = "box">
-                            <a href="/2024/01/31/google-calendar-sync.html"><img src = "/assets/images/google-calendar-app-homepage-mockup.png"></a>
-                        </div>
-                        <div class = "caption"> 
-                            <a href="/2024/01/31/google-calendar-sync.html"> Google Calendar Sync </a>
-                            <br>
-                            <small> Jan 31, 2024 </small>
-                        </div>
-                    </div>
+                <div class = "caption"> 
+                    <a href="/2024/01/31/google-calendar-sync.html"> Google Calendar Sync </a>
+                    <br>
+                    <small> Jan 31, 2024 </small>
+                </div>
             
     
             
-                    <div class = "post-component">
-                        <div class = "box">
-                            <a href="/2024/01/12/why-degrowth-will-never-work.html"><img src = "/assets/images/appalachia-forest-blog-cover.png"></a>
-                        </div>
-                        <div class = "caption"> 
-                            <a href="/2024/01/12/why-degrowth-will-never-work.html"> Why "Degrowth" Will Never Work </a>
-                            <br>
-                            <small> Jan 12, 2024 </small>
-                        </div>
-                    </div>
+                <div class = "caption"> 
+                    <a href="/2024/01/12/why-degrowth-will-never-work.html"> Why "Degrowth" Will Never Work </a>
+                    <br>
+                    <small> Jan 12, 2024 </small>
+                </div>
             
     
     </div>
@@ -85,58 +71,41 @@ outside of the for loop. -->
 
 <a href = "/interests.html"> Interests </a>
 
-<br><br>
-
-<div class = "gallery">
+<div class = "vertical-flexbox">
     
     
     
             
-                    <div class = "post-component">
-                        <!--"post.href" accesses the url specified in the front matter of the post being rendered with 
-                            the "href" variable. This allows me to use the blog post format to directly href to external
-                            links, automating the process of putting in hrefs onto an html page conventionally. -->
-                        <div class = "box">
-                            <a href="https://neuro7.itch.io/epithet"><img src = "/assets/images/epithet-mountains-background-neuro.png"></a>
-                        </div>
-                        <div class = "caption"> 
-                            <a href="https://neuro7.itch.io/epithet"> Epithet - Neuro </a>
-                            <br>
-                            <small> Dec 17, 2022 </small>
-                        </div>
-                    </div>
+                <!--"post.href" accesses the url specified in the front matter of the post being rendered with 
+                    the "href" variable. This allows me to use the blog post format to directly href to external
+                    links, automating the process of putting in hrefs onto an html page conventionally. -->
+                <div class = "caption"> 
+                    <a href="https://neuro7.itch.io/epithet"> Epithet - Neuro </a>
+                    <br>
+                    <small> Dec 17, 2022 </small>
+                </div>
             
     
             
-                    <div class = "post-component">
-                        <!--"post.href" accesses the url specified in the front matter of the post being rendered with 
-                            the "href" variable. This allows me to use the blog post format to directly href to external
-                            links, automating the process of putting in hrefs onto an html page conventionally. -->
-                        <div class = "box">
-                            <a href="https://www.youtube.com/watch?v=LAh-6envaro"><img src = "/assets/images/ginzan-onsen-snow-yamagata.jpeg"></a>
-                        </div>
-                        <div class = "caption"> 
-                            <a href="https://www.youtube.com/watch?v=LAh-6envaro"> Ginzan Onsen </a>
-                            <br>
-                            <small> Nov 20, 2022 </small>
-                        </div>
-                    </div>
+                <!--"post.href" accesses the url specified in the front matter of the post being rendered with 
+                    the "href" variable. This allows me to use the blog post format to directly href to external
+                    links, automating the process of putting in hrefs onto an html page conventionally. -->
+                <div class = "caption"> 
+                    <a href="https://www.youtube.com/watch?v=LAh-6envaro"> Ginzan Onsen </a>
+                    <br>
+                    <small> Nov 20, 2022 </small>
+                </div>
             
     
             
-                    <div class = "post-component">
-                        <!--"post.href" accesses the url specified in the front matter of the post being rendered with 
-                            the "href" variable. This allows me to use the blog post format to directly href to external
-                            links, automating the process of putting in hrefs onto an html page conventionally. -->
-                        <div class = "box">
-                            <a href="https://www.jokteur.com/a/integrated-timetable-switzerland/"><img src = "/assets/images/swiss-train-on-bridge-hofmann.jpeg"></a>
-                        </div>
-                        <div class = "caption"> 
-                            <a href="https://www.jokteur.com/a/integrated-timetable-switzerland/"> Switzerland's Integrated Time Tables </a>
-                            <br>
-                            <small> Jun 10, 2022 </small>
-                        </div>
-                    </div>
+                <!--"post.href" accesses the url specified in the front matter of the post being rendered with 
+                    the "href" variable. This allows me to use the blog post format to directly href to external
+                    links, automating the process of putting in hrefs onto an html page conventionally. -->
+                <div class = "caption"> 
+                    <a href="https://www.jokteur.com/a/integrated-timetable-switzerland/"> Switzerland's Integrated Time Tables </a>
+                    <br>
+                    <small> Jun 10, 2022 </small>
+                </div>
             
     
             
