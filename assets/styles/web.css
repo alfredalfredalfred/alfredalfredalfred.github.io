@@ -29,7 +29,7 @@
 /* Media query for mobile devices */
 @media (max-width: 600px) {
     .module {
-      font-size: 1rem; /* Slightly smaller font size for mobile */
+      font-size: 1.25rem; /* Slightly smaller font size for mobile */
       padding: 1% 0% 1% 0%; /* Reduced padding for mobile screens */
     }
 }
@@ -88,6 +88,17 @@
     opacity: 100%;
 }
 
+@media (max-width: 600px) {
+    .box {
+        display: grid;
+        place-items: center; /* Centers items both horizontally and vertically */
+        height: 97.5vw;
+        width: 95.5vw;
+        overflow: hidden; /* Ensures that if a portrait style picture is longer than the box (on y-axis) that the overflow is hidden */
+    }
+}
+
+
 /* you NEED to have the "img" after the class name in order to use this to override prior opacity behavior */
 .img-no-hover img {
     width: 100%;
@@ -103,14 +114,14 @@
 .caption {
     color: #000;
     font-size: 1rem;
-    padding: 5% 0% 0% 0%;
+    padding: 2.5% 0% 0% 0%;
 }
 /* Media query for mobile devices */
 @media (max-width: 600px) {
     .caption {
         color: #000;
         font-size: .75rem;
-        padding: 5% 0% 0% 0%;
+        padding: 4% 0% 0% 0%;
     }
 }
 
@@ -163,7 +174,7 @@ a:hover {
 }
 
 .horizontal-line {
-    border-top: 2px solid grey;
+    border-top: 1px solid grey;
     opacity: 25%;
     height: 1px;
     width: 60%;
@@ -173,10 +184,14 @@ a:hover {
 /* Media query for mobile devices */
 @media (max-width: 600px) {
     .horizontal-line {
-        border-top: 2px solid grey;
+        border-top: 1px solid grey;
         opacity: 25%;
         height: 1px;
         width: 100%;
         margin: 0 auto;
     }
+}
+
+.copyright {
+    font-size: .75rem;
 }
